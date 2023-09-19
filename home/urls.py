@@ -6,5 +6,6 @@ urlpatterns = [
     path('SGN/', views.SGN, name='SGN'),
     # path('SGN', views.SGN, name='SGN'),
     path('HASE/', views.HASE, name='HASE'),
-    path('MSB/', views.MSB, name='MSB')
+    path('MSB/', views.MSB, name='MSB'),
+    path('Predictions/', views.PRED, name='PRED')
 ]
