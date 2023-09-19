@@ -34,7 +34,11 @@
             
             <div style="float:left; margin-left:45px;width:auto" class="mb-3 relative flex-grow w-full">
                 <label for="feature-2">Smoker?</label>
-                <input class="form-control" type="text" id="feat2" placeholder="Feature-4" aria-label="default input example" style="width:300px; height:40px;" >
+                <select class="form-select" aria-label="Default select example" style="width:300px; height:40px;">
+                    <option selected>Select Yes/No</option>
+                    <option value="1">Yes</option>
+                    <option value="2">No</option>
+                  </select>
                 {% comment %} <div id="emailHelp" class="form-text">Enter Yes/No</div> {% endcomment %}
             </div>
 
