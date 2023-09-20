@@ -16,3 +16,11 @@ It is a choice over flask for deployment projects with longer life cycle and spa
 'pip install django' and other relevant packages
 4. to run the proj
 'python manage.py runserver'
+
+
+### References:
+1. tailwind css
+2. tailblock
+3. get bootstrap
+4. undraw co
+5. colors : tailwind css colors (copy hex-code)

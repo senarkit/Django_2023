@@ -13,3 +13,6 @@ def HASE(requests):
 def MSB(requests):
     # return HttpResponse("This is page for M&S Market")
     return render(requests, "MSB.html")
+
+def PRED(requests):
+    return render(requests, "predictions.html")
