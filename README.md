@@ -6,16 +6,25 @@ Django is based on MVT and becomes useful when multiple api integration is requi
 It is a choice over flask for deployment projects with longer life cycle and spanning various teams. As it enables easy multi-feature integration
 
 ### How to Execute : 
+1. start server
+> python manage.py runserver <optional: specific port>
+2. Navigate to Predictions page
+
+
+### Django Steps :
 1. to start a project
-'django-admin startproject Django_2023'
+> django-admin startproject Django_2023
 2. to start the app/feature
-'python manage.py startapp home'
+> python manage.py startapp home
 3. create a python env using
-'py -3.9 -m venv venv'
-'/venv/scripts/activate/'
-'pip install django' and other relevant packages
-4. to run the proj
-'python manage.py runserver'
+> py -3.9 -m venv venv
+> /venv/scripts/activate/
+> pip install django
+and other relevant packages
+4. migrate
+> python manage.py migrate
+5. to run the proj
+> python manage.py runserver
 
 
 ### References:
