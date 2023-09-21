@@ -11,9 +11,18 @@
         <div class="flex flex-col text-center w-full mb-12">
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Prediction</h1>
             <p class="lg:w-2/3 mx-auto leading-relaxed text-base">To predict the insurance expense given the feature values in the below cells</p>
+            <br><b> 
+                {% if output %}
+                <h6> Value : {{val}} </h6>                
+                <h5> Cost : {{output}} </h5>
+                {% endif %}  
+            </b><br><br>
         </div>
 
-        <form>
+        
+
+        <form method="post">
+            {% csrf_token %}
             <div style="float:left; margin-left:200px;" class="mb-3 mb-3 relative flex-grow w-full">
                 <label for="feature-1">What is your Age (years)?</label>
                 <input class="form-control" id="age" name="age" type="text" placeholder="" aria-label="default input example" style="width:300px; height:40px;">
@@ -67,7 +76,7 @@
 
             <div class="text-center">
                 <div style="clear:both;">&nbsp;</div>
-                <button style="background-color:indigo;" class="btn-primary btn-lg px-4 gap-3 text-white">Submit</button>
+                <button style="background-color:indigo;" type="submit" class="btn-primary btn-lg px-4 gap-3 text-white">Submit</button>
             </div>
         </form>
         

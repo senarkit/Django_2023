@@ -14,7 +14,9 @@ from sklearn.model_selection import train_test_split
 
 def func(method = "Ridge-Regression"):
     # Get Data
-    data = pd.read_csv("./data.csv")
+    import os
+    print(os.getcwd())
+    data = pd.read_csv("static/data.csv")
 
     # clean data if any duplicates
     data = data.drop_duplicates()
@@ -71,7 +73,7 @@ def func(method = "Ridge-Regression"):
 
     ### Save Model
     import joblib
-    joblib.dump(model, './model.joblib')
+    joblib.dump(model, 'static/model.joblib')
 
     # prediction metric
     print("Model :",method)
