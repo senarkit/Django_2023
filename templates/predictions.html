@@ -10,47 +10,57 @@
     <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-col text-center w-full mb-12">
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Prediction</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">To predict the target given the feature values in the below cells</p>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">To predict the insurance expense given the feature values in the below cells</p>
         </div>
 
         <form>
             <div style="float:left; margin-left:200px;" class="mb-3 mb-3 relative flex-grow w-full">
-                <label for="feature-1">Age</label>
-                <input class="form-control" id="feat1" type="text" placeholder="Feature-1" aria-label="default input example" style="width:300px; height:40px;">
+                <label for="feature-1">What is your Age (years)?</label>
+                <input class="form-control" id="age" name="age" type="text" placeholder="" aria-label="default input example" style="width:300px; height:40px;">
                 {% comment %} <div id="emailHelp" class="form-text">Enter Feature-1</div> {% endcomment %}
             </div>
             
             <div style="float:left; margin-left:45px;width:auto" class="mb-3 relative flex-grow w-full">
-                <label for="feature-2">Class</label>
-                <input class="form-control" type="text" id="feat2" placeholder="Feature-2" aria-label="default input example" style="width:300px; height:40px;" >
+                <label for="feature-2">Sex</label>
+                <select class="form-select" name="sex" id="sex" aria-label="Default select example" style="width:300px; height:40px;">
+                    <option selected>Select Yes/No</option>
+                    <option value="1">Male</option>
+                    <option value="0">Female</option>
+                </select>
             </div>
 
             
             <div style="clear:both;">&nbsp;</div>
             <div style="float:left; margin-left:200px;" class="mb-3 mb-3 relative flex-grow w-full">
-                <label for="feature-1">Rent</label>
-                <input class="form-control" id="feat1" type="text" placeholder="Feature-3" aria-label="default input example" style="width:300px; height:40px;">
+                <label for="feature-1">What is your BMI?</label>
+                <input class="form-control" id="bmi" name="bmi" type="text" placeholder="" aria-label="default input example" style="width:300px; height:40px;">
             </div>
             
             <div style="float:left; margin-left:45px;width:auto" class="mb-3 relative flex-grow w-full">
-                <label for="feature-2">Smoker?</label>
-                <select class="form-select" aria-label="Default select example" style="width:300px; height:40px;">
-                    <option selected>Select Yes/No</option>
-                    <option value="1">Yes</option>
-                    <option value="2">No</option>
-                  </select>
+                <label for="feature-2">How many Children?</label>
+                <input class="form-control" id="children" name="children" type="text" placeholder="" aria-label="default input example" style="width:300px; height:40px;">
                 {% comment %} <div id="emailHelp" class="form-text">Enter Yes/No</div> {% endcomment %}
             </div>
 
             <div style="clear:both;">&nbsp;</div>
             <div style="float:left; margin-left:200px;" class="mb-3 elative flex-grow w-full">
-                <label for="feature-1">Nationality</label>
-                <input class="form-control" id="feat1" type="text" placeholder="Feature-5" aria-label="default input example" style="width:300px; height:40px;">
+                <label for="feature-1">Are you a Smoker?</label>
+                <select class="form-select" name="smoker" id="smoker" aria-label="Default select example" style="width:300px; height:40px;">
+                    <option selected>Select Yes/No</option>
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
             </div>
             
             <div style="float:left; margin-left:45px;width:auto" class="mb-3 relative flex-grow w-full">
-                <label for="feature-2">Distance</label>
-                <input class="form-control" type="text" id="feat2" placeholder="Feature-6" aria-label="default input example" style="width:300px; height:40px;" >
+                <label for="feature-2">Select your Region</label>
+                <select class="form-select" name="region" id="region" aria-label="Default select example" style="width:300px; height:40px;">
+                    <option selected>Select from list</option>
+                    <option value="0">southwest</option>
+                    <option value="1">southeast</option>
+                    <option value="2">northwest</option>
+                    <option value="3">northeast</option>
+                </select>
             </div>
 
             
